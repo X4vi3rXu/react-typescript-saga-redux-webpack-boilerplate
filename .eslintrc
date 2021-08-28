@@ -1,0 +1,56 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "redux-saga",
+    "react",
+    "react-hooks",
+    "redux-saga",
+    "jsx-a11y",
+    "prettier"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "airbnb-typescript",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": ["error", {
+      "semi": true,
+      "singleQuote": true,
+      "trailingComma": "es5"
+    }],
+    "@typescript-eslint/no-shadow": 0,
+    "@typescript-eslint/indent": ["error", 2],
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error",
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": 0,
+    "max-len": [2, {
+      "code": 120,
+      "ignorePattern": "^import\\W.*"
+    }],
+    "indent": [
+      "error",
+      2,
+      {
+        "ignoreComments": true,
+        "MemberExpression": 1,
+        "SwitchCase": 1,
+        "VariableDeclarator": "first"
+      }
+    ]
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "project": "./tsconfig.eslint.json"
+  }
+}

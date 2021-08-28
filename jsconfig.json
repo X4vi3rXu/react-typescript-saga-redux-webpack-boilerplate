@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "baseUrl": "src",
+    "paths": {
+      "#/modules/*": ["modules/*"],
+      "#/interface/*": ["interface/*"],
+      "#/utils/*": ["utils/*"],
+      "#/api/*": ["api/*"],
+    },
+    "lib": ["es2015"]
+  },
+  "exclude": ["node_modules", "static"]
+}

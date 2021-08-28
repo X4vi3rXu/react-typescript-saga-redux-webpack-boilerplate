@@ -1,0 +1,17 @@
+{
+  "extends": "@4c/tsconfig/web.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "static",
+    "noImplicitAny": false,
+    "baseUrl": "src",
+    "paths": {
+      "#/modules/*": ["modules/*"],
+      "#/interface/*": ["interface/*"],
+      "#/utils/*": ["utils/*"],
+      "#/api/*": ["api/*"],
+    }
+  },
+  "include": ["src", "types"],
+  "exclude": ["node_modules", "dist", "coverage"]
+}
