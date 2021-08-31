@@ -10,7 +10,6 @@ module.exports = merge(baseConfig, devServerConfig, {
     title: 'Boilerplate',
     name: "index.html",
     template: './template/index.html',
-    inject: false,
   })],
   module: {
     rules: [{
